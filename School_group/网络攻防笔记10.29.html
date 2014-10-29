@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网络攻防笔记10.29</title>
+</head>
+<body>
+<div class="md-section-divider"></div>
+
+<div class="md-section-divider"></div>
+
+<h1 id="网络攻防笔记1029">网络攻防笔记10.29</h1>
+
+<p>编辑器选择：EditPlus etc. <br>
+(最基本的记事本就可以) <br>
+浏览器选择：尽量不用IE浏览器 <br>
+教程：W3School离线电子书 <br>
+或者在线 <a href="http://www.w3school.com.cn/" target="_blank">http://www.w3school.com.cn/</a></p>
+
+<p>仅供上课记录，详细资料请自行搜索 <br>
+欢迎勘误或指正</p>
+
+<p><div class="toc">
+<ul>
+<li><a href="#网络攻防笔记1029">网络攻防笔记10.29</a><ul>
+<li><a href="#html-基础知识">HTML 基础知识</a><ul>
+<li><a href="#html-标题">HTML 标题</a></li>
+<li><a href="#html-段落">HTML 段落</a></li>
+<li><a href="#html-链接">HTML 链接</a></li>
+<li><a href="#html-图像">HTML 图像</a></li>
+<li><a href="#html-列表">HTML 列表</a></li>
+<li><a href="#html-表格">HTML 表格</a></li>
+<li><a href="#html-注释">HTML 注释</a></li>
+<li><a href="#html-表单">HTML 表单</a></li>
+<li><a href="#html-布局">HTML 布局</a></li>
+<li><a href="#html-框架">HTML 框架</a></li>
+<li><a href="#html-内联框架">HTML 内联框架</a></li>
+<li><a href="#html-背景颜色">HTML 背景/颜色</a></li>
+<li><a href="#html-头部">HTML 头部</a></li>
+<li><a href="#html-其他标签">HTML 其他标签</a></li>
+<li><a href="#附">附：</a></li>
+</ul>
+</li>
+<li><a href="#虚拟机的使用">虚拟机的使用</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</p>
+
+<div class="md-section-divider"></div>
+
+<h2 id="html-基础知识">HTML 基础知识</h2>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-标题">HTML 标题</h3>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="tag">&lt;h1&gt;</span><span class="pln">标题内容</span><span class="tag">&lt;/h1&gt;</span></code></li><li class="L1"><code class="language-html"><span class="tag">&lt;h2&gt;</span><span class="pln">标题内容</span><span class="tag">&lt;/h2&gt;</span></code></li><li class="L2"><code class="language-html"><span class="pln">...</span></code></li><li class="L3"><code class="language-html"><span class="tag">&lt;h5&gt;</span><span class="pln">标题内容</span><span class="tag">&lt;/h5&gt;</span></code></li><li class="L4"><code class="language-html"><span class="tag">&lt;h6&gt;</span><span class="pln">标题内容</span><span class="tag">&lt;/h6&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-段落">HTML 段落</h3>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="tag">&lt;p&gt;</span><span class="pln">This is a paragraph</span><span class="tag">&lt;/p&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-链接">HTML 链接</h3>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">//链接到网址</span></code></li><li class="L1"><code class="language-html"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.baidu.com"</span><span class="tag">&gt;</span><span class="pln">百度</span><span class="tag">&lt;/a&gt;</span></code></li><li class="L2"><code class="language-html"><span class="pln">//也可以链接到一个文件</span></code></li><li class="L3"><code class="language-html"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"C:\test.html"</span><span class="tag">&gt;</span><span class="pln">c盘</span><span class="tag">&lt;/a&gt;</span></code></li><li class="L4"><code class="language-html"><span class="pln">（windows下： 链接可以是相对路径或是绝对路径）</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-图像">HTML 图像</h3>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">""</span><span class="tag">/&gt;</span><span class="pln">或</span></code></li><li class="L1"><code class="language-html"><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">""</span><span class="pln"> </span><span class="tag">&gt;&lt;/img&gt;</span></code></li><li class="L2"><code class="language-html"><span class="pln">//example</span></code></li><li class="L3"><code class="language-html"><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"http://www.baidu.com/img/bd_logo1.png"</span><span class="pln"> </span><span class="atn">width</span><span class="pun">=</span><span class="atv">"400"</span><span class="pln"> </span><span class="atn">height</span><span class="pun">=</span><span class="atv">"400"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"baidu logo"</span><span class="tag">/&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-列表">HTML 列表</h3>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">//无序列表</span></code></li><li class="L1"><code class="language-html"><span class="tag">&lt;ul&gt;</span></code></li><li class="L2"><code class="language-html"><span class="pln">    </span><span class="tag">&lt;li&gt;</span><span class="pln">Coffee</span><span class="tag">&lt;/li&gt;</span></code></li><li class="L3"><code class="language-html"><span class="pln">    </span><span class="tag">&lt;li&gt;</span><span class="pln">Milk</span><span class="tag">&lt;/li&gt;</span></code></li><li class="L4"><code class="language-html"><span class="tag">&lt;/ul&gt;</span></code></li><li class="L5"><code class="language-html"></code></li><li class="L6"><code class="language-html"><span class="pln">//有序列表</span></code></li><li class="L7"><code class="language-html"><span class="tag">&lt;ol&gt;</span></code></li><li class="L8"><code class="language-html"><span class="pln">    </span><span class="tag">&lt;li&gt;</span><span class="pln">Coffee</span><span class="tag">&lt;/li&gt;</span></code></li><li class="L9"><code class="language-html"><span class="pln">    </span><span class="tag">&lt;li&gt;</span><span class="pln">Milk</span><span class="tag">&lt;/li&gt;</span></code></li><li class="L0"><code class="language-html"><span class="tag">&lt;/ol&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-表格">HTML 表格</h3>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code><span class="tag">&lt;table</span><span class="pln"> </span><span class="atn">border</span><span class="pun">=</span><span class="atv">"1"</span><span class="tag">&gt;</span><span class="pln">          //表格边框宽度为1</span></code></li><li class="L1"><code><span class="pln">    </span><span class="tag">&lt;tr&gt;</span></code></li><li class="L2"><code><span class="pln">        </span><span class="tag">&lt;th&gt;</span><span class="pln">Heading</span><span class="tag">&lt;/th&gt;</span><span class="pln">    //表头</span></code></li><li class="L3"><code><span class="pln">        </span><span class="tag">&lt;th&gt;</span><span class="pln">Another Heading</span><span class="tag">&lt;/th&gt;</span></code></li><li class="L4"><code><span class="pln">    </span><span class="tag">&lt;/tr&gt;</span></code></li><li class="L5"><code><span class="pln">    </span><span class="tag">&lt;tr&gt;</span></code></li><li class="L6"><code><span class="pln">        </span><span class="tag">&lt;td&gt;</span><span class="pln">row 1, cell 1</span><span class="tag">&lt;/td&gt;</span></code></li><li class="L7"><code><span class="pln">        </span><span class="tag">&lt;td&gt;</span><span class="pln">row 1, cell 2</span><span class="tag">&lt;/td&gt;</span></code></li><li class="L8"><code><span class="pln">    </span><span class="tag">&lt;/tr&gt;</span></code></li><li class="L9"><code><span class="pln">    </span><span class="tag">&lt;tr&gt;</span></code></li><li class="L0"><code><span class="pln">        </span><span class="tag">&lt;td&gt;</span><span class="pln">row 2, cell 1</span><span class="tag">&lt;/td&gt;</span></code></li><li class="L1"><code><span class="pln">        </span><span class="tag">&lt;td&gt;</span><span class="pln">row 2, cell 2</span><span class="tag">&lt;/td&gt;</span></code></li><li class="L2"><code><span class="pln">    </span><span class="tag">&lt;/tr&gt;</span></code></li><li class="L3"><code><span class="tag">&lt;/table&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-注释">HTML 注释</h3>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">&lt;!-注释-&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-表单">HTML 表单</h3>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"firstname"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></li><li class="L1"><code class="language-html"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"sex"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"male"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln"> Male</span></code></li><li class="L2"><code class="language-html"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"bike"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">I have a bike</span></code></li><li class="L3"><code class="language-html"><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"submit"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Submit"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-布局">HTML 布局</h3>
+
+<p>当前web网页开发采用<code>&lt;div&gt;</code>标签方式布局，而非<code>&lt;table&gt;</code>标签</p>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-框架">HTML 框架</h3>
+
+<p>通过使用框架，你可以在同一个浏览器窗口中显示不止一个页面。 <br>
+框架标签为<code>&lt;frameset&gt;</code></p>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-内联框架">HTML 内联框架</h3>
+
+<p>iframe 用于在网页内显示网页。 <br>
+<code>&lt;iframe src="URL"&gt;&lt;/iframe&gt;</code></p>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-背景颜色">HTML 背景/颜色</h3>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="tag">&lt;body</span><span class="pln"> </span><span class="atn">bgcolor</span><span class="pun">=</span><span class="atv">"black"</span><span class="tag">&gt;</span></code></li><li class="L1"><code class="language-html"><span class="tag">&lt;body</span><span class="pln"> </span><span class="atn">background</span><span class="pun">=</span><span class="atv">"http://www.w3school.com.cn/clouds.gif"</span><span class="tag">&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-头部">HTML 头部</h3>
+
+<ul>
+<li>文件的标题 <br>
+<code>&lt;title&gt;标题就是网页标签上的文字&lt;/title&gt;</code></li>
+<li>所有链接一个目标 <br>
+<code>&lt;base&gt; 标签为页面上的所有链接规定默认地址或默认目标（target）</code></li>
+</ul>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code><span class="tag">&lt;head&gt;</span></code></li><li class="L1"><code><span class="tag">&lt;base</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.w3school.com.cn/images/"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></li><li class="L2"><code><span class="tag">&lt;base</span><span class="pln"> </span><span class="atn">target</span><span class="pun">=</span><span class="atv">"_blank"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></li><li class="L3"><code><span class="tag">&lt;/head&gt;</span></code></li></ol></pre>
+
+<ul>
+<li>使用<code>&lt;meta&gt;</code>元素来描述文档。 <br>
+<ul><li>元数据（metadata）是关于数据的信息。</li>
+<li> 标签提供关于 HTML 文档的元数据。</li>
+<li>元数据不会显示在页面上，但是对于机器是可读的。</li>
+<li>典型的情况是，meta 元素被用于规定页面的描述、关键词、文档的作者、最后修改时间以及其他元数据。</li></ul></li>
+</ul>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">//example:</span></code></li><li class="L1"><code class="language-html"><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">http-equiv</span><span class="pun">=</span><span class="atv">"Content-Type"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"text/html; charset=utf-8"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></li><li class="L2"><code class="language-html"><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"author"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"w3school.com.cn"</span><span class="tag">&gt;</span></code></li><li class="L3"><code class="language-html"><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"description"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"Free Web tutorials on HTML"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></li></ol></pre>
+
+<ul>
+<li>重定向用户(跳转网页)</li>
+</ul>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">http-equiv</span><span class="pun">=</span><span class="atv">"Content-Type"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"text/html; charset=gb2312"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></li><li class="L1"><code><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">http-equiv</span><span class="pun">=</span><span class="atv">"Refresh"</span><span class="pln"> </span><span class="atn">content</span><span class="pun">=</span><span class="atv">"5;url=http://www.w3school.com.cn"</span><span class="pln"> </span><span class="tag">/&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h3 id="html-其他标签">HTML 其他标签</h3>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">HTML实体:</span></code></li><li class="L1"><code class="language-html"><span class="pln">HTML 中的常用字符实体是不间断空格 "&amp;nbsp;"</span></code></li><li class="L2"><code class="language-html"><span class="pln">浏览器总是会截短 HTML 页面中的空格。如果您在文本中写 10 个空格，在显示该页面之前，浏览器会删除它们中的 9 个。如需在页面中增加空格的数量，您需要使用 &amp;nbsp; 字符实体。</span></code></li></ol></pre>
+
+<p><em>比如百度贴吧的 <a href="http://tieba.baidu.com/p/1420950814" target="_blank">回复栏</a></em></p>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="pln">换行符是 </span><span class="tag">&lt;/br&gt;</span></code></li><li class="L1"><code class="language-html"><span class="pln">在HTML文档中，回车并不能换行，需要使用换行符，但部分标签是单独一行的。</span></code></li><li class="L2"><code class="language-html"><span class="pln">如</span><span class="tag">&lt;p&gt;</span><span class="pln"> 等等</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code><span class="tag">&lt;pre&gt;&lt;/pre&gt;</span><span class="pln">标签不改变其内容的排版方式</span></code></li><li class="L1"><code><span class="pln">需要用到一段代码时，会使用到。</span></code></li><li class="L2"><code><span class="tag">&lt;pre&gt;</span></code></li><li class="L3"><code><span class="pln">int main(){</span></code></li><li class="L4"><code><span class="pln">    return 0;</span></code></li><li class="L5"><code><span class="pln">}</span></code></li><li class="L6"><code><span class="tag">&lt;/pre&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code><span class="tag">&lt;address&gt;</span><span class="pln"> 标签定义文档或文章的作者/拥有者的联系信息</span></code></li><li class="L1"><code><span class="pln">关于 mailto 标签： 当我们点击了example@phplamp.com链接后浏览器会为我们自动选择本地的默认邮件软件，并将mailto标签后example@phplamp.com邮件地址放到邮件软件的发送地址中，少去了我们发送邮件时输入发送地址的烦扰，同时也可以避免输错邮件地址。</span></code></li><li class="L2"><code><span class="tag">&lt;address&gt;</span></code></li><li class="L3"><code><span class="pln">    </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"mailto:service@s3school.com.cn"</span><span class="tag">&gt;</span><span class="pln">发送邮件</span><span class="tag">&lt;/a&gt;</span></code></li><li class="L4"><code><span class="tag">&lt;/address&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h3 id="附">附：</h3>
+
+<ul>
+<li>HTML 文件基本结构</li>
+</ul>
+
+<div class="md-section-divider"></div>
+
+<pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="language-html"><span class="dec">&lt;!DOCTYPE&gt;</span></code></li><li class="L1"><code class="language-html"><span class="tag">&lt;html&gt;</span></code></li><li class="L2"><code class="language-html"><span class="pln">    </span><span class="tag">&lt;head&gt;</span></code></li><li class="L3"><code class="language-html"><span class="pln">        </span><span class="tag">&lt;title&gt;</span><span class="pln">标题</span><span class="tag">&lt;/title&gt;</span></code></li><li class="L4"><code class="language-html"><span class="pln">        </span><span class="tag">&lt;meta&gt;</span></code></li><li class="L5"><code class="language-html"><span class="pln">    </span><span class="tag">&lt;/head&gt;</span></code></li><li class="L6"><code class="language-html"><span class="pln">    </span><span class="tag">&lt;body&gt;</span></code></li><li class="L7"><code class="language-html"><span class="pln">        </span><span class="tag">&lt;p&gt;</span><span class="pln">主体内容</span><span class="tag">&lt;/p&gt;</span></code></li><li class="L8"><code class="language-html"><span class="pln">    </span><span class="tag">&lt;/body&gt;</span></code></li><li class="L9"><code class="language-html"><span class="tag">&lt;/html&gt;</span></code></li></ol></pre>
+
+<div class="md-section-divider"></div>
+
+<h2 id="虚拟机的使用">虚拟机的使用</h2>
+
+<p>虚拟机有什么用？ <br>
+学习一些软件又不想在本机上操作时，使用虚拟机在本机的硬盘中虚拟一台电脑，虚拟出来的电脑和真实机差别不大，以供学习使用。</p>
+
+<p>主流的虚拟机有 <br>
++ Oracle VM VirtualBox (free) <br>
++ VMware Workstation (not free)</p>
+
+<p>如有兴趣可自行查找资料。要使用虚拟机，需要系统镜像文件来安装操作系统。</p>
+</body>
+</html>
